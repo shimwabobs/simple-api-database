@@ -17,7 +17,6 @@ const pool=new Client({
     port:5432,
 });
 
-pool.connect();
 app.post("/users",async (req,res) => {
     const name=req.body.name;
     const age=req.body.age;
